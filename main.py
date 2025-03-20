@@ -182,7 +182,7 @@ html = """
         <script>
             var client_id = Date.now();
             document.querySelector("#ws-id").textContent = client_id;
-            var ws = new WebSocket(`ws://localhost:8000/ws/${client_id}`);
+            var ws = new WebSocket(`ws:http://0.0.0.0:10000/ws/${client_id}`);
             
             const messagesContainer = document.getElementById('messages');
             
